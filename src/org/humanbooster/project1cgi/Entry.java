@@ -7,6 +7,9 @@ import org.humanbooster.project1cgi.model.enumerations.Dessert;
 import org.humanbooster.project1cgi.model.enumerations.Drink;
 import org.humanbooster.project1cgi.model.enumerations.MainCourse;
 import org.humanbooster.project1cgi.model.enumerations.Order;
+import org.humanbooster.project1cgi.model.heritage.Animal;
+import org.humanbooster.project1cgi.model.heritage.Cheval;
+import org.humanbooster.project1cgi.model.heritage.Tigre;
 import org.humanbooster.project1cgi.model.printer_repartition.Computer;
 import org.humanbooster.project1cgi.model.printer_repartition.Printer;
 import org.humanbooster.project1cgi.model.printer_repartition.Repartitor;
@@ -18,7 +21,19 @@ public class Entry {
 
     public static void main(String[] args) {
 
-        resto();
+        testAnimaux();
+
+    }
+
+    public static void testAnimaux() {
+
+        Animal a = new Animal();
+        Cheval c = new Cheval();
+        Tigre t = new Tigre();
+
+        a.manger();
+        c.manger();
+        t.manger();
 
     }
 
